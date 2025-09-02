@@ -17,6 +17,12 @@
     padding-top: 10px;
    }
 
+
+.header .navbar {
+    height: 50px;
+}
+
+
 .navbar {
     display: flex;
     flex-direction: row;
