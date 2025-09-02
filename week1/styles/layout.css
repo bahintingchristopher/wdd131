@@ -1,0 +1,65 @@
+:root {
+  --primary: #227C9D;
+  --accent1: #17C3B2;
+  --background: #FFCB77;
+  --accent2: #FEF9EF;  
+  --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-secondary: 'Poppins', sans-serif;
+}
+
+
+
+
+.header {
+    text-align: left;
+    background: var(--accent1);
+    height: 100px;
+    padding-top: 10px;
+   }
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: var(--primary);
+    padding-top: 30px;
+    height: 50px;    
+    padding-bottom: 30px;
+    }
+
+.navbar a {
+    color: var(--accent2);
+    font-size: 2rem;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 500px;
+}
+
+.main_content {
+    background: var(--background);
+    text-align: center;
+}
+
+.aside_content {
+    text-align: center;
+    background: var(--accent2);
+}
+
+.footer {
+    padding-top: 20px;
+    background: var(--accent1);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.social-icons {
+    text-align: center;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
