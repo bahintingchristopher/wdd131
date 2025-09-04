@@ -6,6 +6,13 @@
   --accent2: #71B48D; /* hover*/
 }
 
+/*set the width to 1200px*/
+header, nav, footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
 
     
 
@@ -29,37 +36,39 @@ a, button {
   display: block;
   text-align: center;
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
  }
 
  
 nav ul {
   display: flex;
-  background: var(--main-font-color);
+  /* background: var(--main-font-color); */
   justify-content: space-evenly;  
   gap: 2rem;  
   list-style-type: none; 
   padding: 10px;
+    padding-top: 40px;
   border-radius: 5px;
   margin: 0 auto 2rem auto;
 }
 
- 
 nav a {
   text-decoration: none;
-  color: var(--background-color);
+  color: var(--accent2);
   font-weight: 600;
   font-size: 1.5rem;
   padding: 0.5rem 1rem;
-  border-radius: 4px;
+  border-radius: 10px;
+  border: 2px solid var(--accent2);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
  
 nav a:hover,
 nav a:focus {
-color: var(--headings-color);
+color: var(--headings-color);  
+text-decoration: underline;     
   
 }
 
@@ -74,12 +83,22 @@ color: var(--headings-color);
 
 
 
-main { 
+/* main { 
 margin-right: 2rem;
 display: grid;
 grid-template-columns: 65% 35%;
 gap: 2rem;
+} */
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  gap: 2rem;
 }
+
 
  
 section.card { 
@@ -199,23 +218,17 @@ text-align: justify;
 }
 
 .card-two ul li a {
-  font-size: 1.4rem;  
+  font-size: 1.4rem;
+  color: var(--background-color);  
+  text-decoration: none;           
+  transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.card-two ul li a:hover,
+.card-two ul li a:focus {
+  color: var(--headings-color);    
+  text-decoration: underline;      
+}
 
 
 
@@ -224,11 +237,12 @@ text-align: justify;
 
 footer {
 margin-top: 30px;
-background-color: var(--accent2);
-color: var(--background-color);
+color: var(--accent2);
 text-align: center;
 padding: 1rem 0;
 font-size: 1.2rem;
+
+
 
 }
 
@@ -238,4 +252,6 @@ justify-content: center; /* center the whole line */
 gap: 0.5rem; /* space between items */
 align-items: center; /* vertically center items */
 margin: 0;  
+
+
 }
