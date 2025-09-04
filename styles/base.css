@@ -43,7 +43,6 @@ a, button {
  
 nav ul {
   display: flex;
-  /* background: var(--main-font-color); */
   justify-content: space-evenly;  
   gap: 2rem;  
   list-style-type: none; 
@@ -63,7 +62,6 @@ nav a {
   border: 2px solid var(--accent2);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-
  
 nav a:hover,
 nav a:focus {
@@ -81,15 +79,6 @@ text-decoration: underline;
   padding-top: 20px; 
 }
 
-
-
-/* main { 
-margin-right: 2rem;
-display: grid;
-grid-template-columns: 65% 35%;
-gap: 2rem;
-} */
-
 main {
   max-width: 1200px;
   margin: 0 auto;
@@ -98,8 +87,6 @@ main {
   grid-template-columns: 65% 35%;
   gap: 2rem;
 }
-
-
  
 section.card { 
 display: flex;
@@ -112,12 +99,10 @@ margin-top: 100px;
 section.card h2 {
 background: var(--background-color);
 padding: 10px;
-text-align: center;   /* center text */
+text-align: center;    
 margin-top: 0;         
-margin-bottom: 1rem;  /* add space below heading */
+margin-bottom: 1rem;   
 }
-
-
 
 section.card h3{
 color: var(--background-color);
@@ -127,7 +112,7 @@ text-align: center;
 
 .leftcolumn {
 border-radius: 8px;
-box-shadow: 0 2px 6px var(--background-color); /*just put box the left column*/
+box-shadow: 0 2px 6px var(--background-color); 
 }
 
 .leftcolumn h2 {
@@ -151,8 +136,8 @@ margin-bottom: 1rem;
 
 .card-one {
   display: flex;
-  justify-content: space-between; /* space between text and image */
-  align-items: flex-start; /* align top */
+  justify-content: space-between;  
+  align-items: flex-start;  
   gap: 1rem;  
   padding-right: 10px;
 }
@@ -179,7 +164,6 @@ margin: 10px;
 color: var(--background-color);
 }
 
-
 figure {
 text-align: center;
 font-size: 1.2rem;
@@ -188,7 +172,6 @@ color: var(--background-color);
 margin-top: 0.5rem;
 }
 
-
 .country p {
 margin-top: -2px;
 margin-right: 20px;
@@ -196,8 +179,6 @@ margin-left: -70px;
 font-size: 1.4rem;
 text-align: justify;
 }
-
-
 
 .card-two {
   background-color: var(--accent2);
@@ -208,7 +189,6 @@ text-align: justify;
   flex-direction: column;
   width:100%;  
  }
-
 
  .card-two ul li {
   font-size: 1.4rem;  
@@ -230,28 +210,18 @@ text-align: justify;
   text-decoration: underline;      
 }
 
-
-
-
-
-
 footer {
 margin-top: 30px;
 color: var(--accent2);
 text-align: center;
 padding: 1rem 0;
 font-size: 1.2rem;
-
-
-
 }
 
 footer p {
 display: flex;
-justify-content: center; /* center the whole line */
-gap: 0.5rem; /* space between items */
-align-items: center; /* vertically center items */
+justify-content: center;  
+gap: 0.5rem;  
+align-items: center;  
 margin: 0;  
-
-
 }
