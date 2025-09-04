@@ -102,7 +102,7 @@ text-decoration: underline;
 main {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 auto;
+  
   display: grid;
   grid-template-columns: 65% 35%;
   gap: 2rem;
