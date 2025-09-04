@@ -13,7 +13,7 @@ body {
   background-color: var(--background-color);
   color: var(--main-font-color);
   font-family: 'Open Sans', sans-serif;
-  width: 100%;
+  
 }
 
 h1, h2 {
@@ -75,7 +75,6 @@ color: var(--headings-color);
 
 
 main { 
-width: 100%;
 margin-right: 2rem;
 display: grid;
 grid-template-columns: 65% 35%;
