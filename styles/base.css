@@ -268,7 +268,7 @@ margin: 0;
 }
 
 
-/*for mobile and gadgets*/
+/*FOR SMALLER SCREEN*/
 @media (max-width: 600px) {
   body {
     font-size: 1rem;
@@ -276,18 +276,38 @@ margin: 0;
     margin: 0;
   }
 
-  header,
-  nav,
-  main,
-  footer,
-  #course-title {
+  header {
     max-width: 100%;
     margin: 0 auto;
     padding: 0 1rem;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  nav {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+ 
+ 
+  main {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    border-radius: 5px;
     box-sizing: border-box;
   }
 
   #course-title {
+    max-width: 100%;
+    margin: 0 auto;
+    /* padding: 0 1rem; */
+    border-radius: 5px;
+    box-sizing: border-box;
     font-size: 1.5rem;
     padding: 20px 10px;
     margin-bottom: 1rem;
@@ -306,16 +326,21 @@ margin: 0;
   nav ul {
     flex-direction: column;
     gap: 1rem;
+    color: var(--background-color);
     padding: 1rem 0;
     margin: 0 auto;
     border-radius: 0;
     max-width: 100%;
+    border-radius: 15px;
     box-sizing: border-box;
+    
   }
 }
 
 
   nav a {
+    /* border-bottom: 1px solid var(--main-font-color); */
+    text-decoration: underline;
     font-size: 1.2rem;
     padding: 0.5rem;
     text-align: center;
@@ -358,12 +383,23 @@ margin: 0;
   .country {
     grid-template-columns: 1fr;
     margin: 0;
+    
   }
-
+  
   .country p {
+    text-align: justify;
     margin: 1rem 0;
     font-size: 1.2rem;
-    text-align: center;
+        padding-bottom: 60px;
+        padding-right: 10px;
+        padding-left: 10px;
+  }
+
+  .country img {
+    margin-top: 10px;
+    justify-content: center;
+    margin-left: 40px;
+    margin-right: auto;
   }
 
   figure {
@@ -374,7 +410,21 @@ margin: 0;
   section.card h3 {
     font-size: 1.2rem;
     margin: 0 10px;
+    text-decoration: underline;
+    border-bottom: none;
+    text-decoration-style: solid;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 3px;
   }
+
+  /* section.card h3{
+color: var(--background-color);
+font-size: 1.5rem;
+text-align: center;
+border-bottom: 2px solid var(--background-color);
+margin-right: 120px;
+margin-left: 120px;
+   } */
 
   .card-two ul {
     margin-top: 1rem;
@@ -392,14 +442,20 @@ margin: 0;
   }
 
   footer {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    border-radius: 5px;
+    box-sizing: border-box;
     transform: none;
     font-size: 1rem;
-    padding: 1rem;
     text-align: center;
     margin: 2rem auto 0;
   }
 
   footer p {
+    padding-top: 10px;
+    padding-bottom: 10px;
     flex-direction: column;
     gap: 0.3rem;
     font-size: 1rem;
