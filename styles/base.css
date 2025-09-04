@@ -31,14 +31,49 @@ a, button {
   color: var(--background-color);
 }
 
+.container {
+  display: flex;
+  justify-content: center; /* or space-between */
+  align-items: center;     /* vertically center */
+  flex-wrap: wrap;         /* allows wrapping on smaller screens */
+  gap: 10px;               /* spacing between items */
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px;
+}
 
-#course-title {
+#course-title,
+.container h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  white-space: nowrap; /* Prevent line breaking */
+}
+
+
+
+/* /*this is the original* */
+/* #course-title {
   display: block;
-  text-align: center;
+  padding-top: 12px;
+  text-align: left;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
+  margin-left: 160px;
  }
+
+
+
+  h1 {
+  font-size: 1.8rem;
+  margin: 0;
+ 
+  text-align: center;
+  right: 260px;
+  top: 21px; 
+   white-space: nowrap;
+} */
+
 
  
 nav ul {
@@ -47,7 +82,7 @@ nav ul {
   gap: 2rem;  
   list-style-type: none; 
   padding: 10px;
-    padding-top: 40px;
+    padding-top: 70px;
   border-radius: 5px;
   margin: 0 auto 2rem auto;
 }
@@ -71,13 +106,6 @@ text-decoration: underline;
 }
 
  
- h1 {
-  font-size: 1.8rem;
-  margin: 0;
-  position: absolute;
-  margin-left: 30px;
-  padding-top: 20px; 
-}
 
 main {
   max-width: 1200px;
@@ -108,6 +136,9 @@ section.card h3{
 color: var(--background-color);
 font-size: 1.5rem;
 text-align: center;
+border-bottom: 2px solid var(--background-color);
+margin-right: 120px;
+margin-left: 120px;
    }
 
 .leftcolumn {
@@ -162,6 +193,7 @@ display: grid;
 grid-template-columns: 1fr 1fr;
 margin: 10px;
 color: var(--background-color);
+
 }
 
 figure {
