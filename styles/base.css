@@ -31,48 +31,30 @@ a, button {
   color: var(--background-color);
 }
 
-.container {
-  display: flex;
-  justify-content: center; /* or space-between */
-  align-items: center;     /* vertically center */
-  flex-wrap: wrap;         /* allows wrapping on smaller screens */
-  gap: 10px;               /* spacing between items */
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 10px;
-}
-
-#course-title,
-.container h1 {
-  font-size: 1.8rem;
-  margin: 0;
-  white-space: nowrap; /* Prevent line breaking */
-}
 
 
 
-/* /*this is the original* */
-/* #course-title {
+
+ #course-title {
   display: block;
   padding-top: 12px;
-  text-align: left;
+  text-align: center;
   font-weight: 700;
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  margin-left: 160px;
- }
+  }
 
 
 
   h1 {
   font-size: 1.8rem;
   margin: 0;
- 
+ position: absolute;
   text-align: center;
-  right: 260px;
-  top: 21px; 
+  /* right: 260px;
+  top: 21px;  */
    white-space: nowrap;
-} */
+} 
 
 
  
