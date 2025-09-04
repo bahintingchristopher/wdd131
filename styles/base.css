@@ -1,0 +1,242 @@
+:root {
+  --background-color: #251F47;
+  --main-font-color: #86CB92;
+  --headings-color: #598185;
+  --accent1: #404E7C;
+  --accent2: #71B48D; /* hover*/
+}
+
+
+    
+
+body {
+  background-color: var(--background-color);
+  color: var(--main-font-color);
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+}
+
+h1, h2 {
+  color: var(--main-font-color);
+}
+
+a, button {
+  color: var(--background-color);
+}
+
+
+#course-title {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+ }
+
+ 
+nav ul {
+  display: flex;
+  background: var(--main-font-color);
+  justify-content: space-evenly;  
+  gap: 2rem;  
+  list-style-type: none; 
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0 auto 2rem auto;
+}
+
+ 
+nav a {
+  text-decoration: none;
+  color: var(--background-color);
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+ 
+nav a:hover,
+nav a:focus {
+color: var(--headings-color);
+  
+}
+
+ 
+ h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  position: absolute;
+  margin-left: 30px;
+  padding-top: 20px; 
+}
+
+
+
+main { 
+width: 100%;
+margin-right: 2rem;
+display: grid;
+grid-template-columns: 65% 35%;
+gap: 2rem;
+}
+
+ 
+section.card { 
+display: flex;
+flex-direction: column;
+align-items: center;  
+justify-content: flex-start;  
+margin-top: 100px;
+}
+
+section.card h2 {
+background: var(--background-color);
+padding: 10px;
+text-align: center;   /* center text */
+margin-top: 0;         
+margin-bottom: 1rem;  /* add space below heading */
+}
+
+
+
+section.card h3{
+color: var(--background-color);
+font-size: 1.5rem;
+text-align: center;
+   }
+
+.leftcolumn {
+border-radius: 8px;
+box-shadow: 0 2px 6px var(--background-color); /*just put box the left column*/
+}
+
+.leftcolumn h2 {
+text-align: center;
+margin-top: 0.5rem;
+margin-bottom: 1rem;  
+}
+
+
+.card {
+  background-color: var(--accent2);  
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px var(--accent2);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+
+}
+
+.card-one {
+  display: flex;
+  justify-content: space-between; /* space between text and image */
+  align-items: flex-start; /* align top */
+  gap: 1rem;  
+  padding-right: 10px;
+}
+
+      
+.card-one p {
+color: var(--background-color);
+padding-left: 15px;
+text-align: justify;
+font-size: 1.4rem;
+      
+}
+
+.card-one img {
+margin-top: 20px; 
+display: block;
+border: 5px solid var(--background-color);
+}
+
+.country {
+display: grid;
+grid-template-columns: 1fr 1fr;
+margin: 10px;
+color: var(--background-color);
+}
+
+
+figure {
+text-align: center;
+font-size: 1.2rem;
+margin-left: -50px;
+color: var(--background-color); 
+margin-top: 0.5rem;
+}
+
+
+.country p {
+margin-top: -2px;
+margin-right: 20px;
+margin-left: -70px;
+font-size: 1.4rem;
+text-align: justify;
+}
+
+
+
+.card-two {
+  background-color: var(--accent2);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px var(--background-color);
+  color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  width:100%;  
+ }
+
+
+ .card-two ul li {
+  font-size: 1.4rem;  
+  margin-top: 30px;
+  padding-bottom: 14px;
+  margin-left: 30px;
+}
+
+.card-two ul li a {
+  font-size: 1.4rem;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+margin-top: 30px;
+background-color: var(--accent2);
+color: var(--background-color);
+text-align: center;
+padding: 1rem 0;
+font-size: 1.2rem;
+
+}
+
+footer p {
+display: flex;
+justify-content: center; /* center the whole line */
+gap: 0.5rem; /* space between items */
+align-items: center; /* vertically center items */
+margin: 0;  
+}
