@@ -69,12 +69,6 @@ li {
 }
 
 
-#list li input[type="checkbox"] {
-    width: 24px;   /* bigger width */
-    height: 24px;  /* bigger height */
-    cursor: pointer; /* makes it clear it's clickable */
-}
-
 
 
         
