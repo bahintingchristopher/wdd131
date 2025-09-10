@@ -32,6 +32,7 @@ button {
 
 button {
 	margin: 0.5rem;
+	background-color: blue;/*just practice*/
 }
 
 .delete {
