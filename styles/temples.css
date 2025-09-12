@@ -131,7 +131,7 @@ margin: 0 auto;
 }
 
 nav li {
-/* no extra styles */
+margin: 0;
 }
 
 nav a {
@@ -185,10 +185,10 @@ box-shadow: 1px 1px 5px var(--main-font-color);
 transition: transform 0.3s ease;
 }
 
-/* .temple_gallery figure:hover {
+.temple_gallery figure:hover {
 transform: translateY(-5px);
 box-shadow: 2px 6px 15px var(--background-color);
-} */
+}
 
 .temple_gallery img {
 width: 100%;
