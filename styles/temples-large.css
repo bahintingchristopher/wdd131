@@ -1,0 +1,99 @@
+/* General */
+:root {
+--main-color: #251F47;
+--body-color: #86CB92;
+--headings-color: #598185; 
+--accent1: #404E7C;
+--accent2: #71B48D; /* hover*/  
+--font-body: 'Roboto', sans-serif; 
+--font-headings: 'Lato', sans-serif;
+}
+
+body {
+  background-color: var(--body-color); 
+}
+
+
+
+/* ///////////////////////////////
+LARGE SCREEN (740px and up)
+/////////////////////////////////*/
+
+@media (min-width: 740px) {
+/* Header - flex horizontal layout */
+#menu{
+display: none;
+}
+
+
+header {
+background-color: var(--main-color);
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 1rem; 
+padding: 1rem;
+display: flex;
+align-items: center;             /* vertical center */
+justify-content: space-between;  /* space between h1 and nav */
+}
+
+header h1 {
+margin: 0;
+color: var(--accent2);
+
+}
+
+nav {
+display: block; /*show the nav menu in large screen*/
+}
+
+nav ul {
+flex-direction: row;
+max-width: none;
+border-radius: 0;
+background: transparent;  /* remove nav background color so that i can use the header background */
+}
+
+nav a {
+border-bottom: none;
+color: var(--accent2);
+font-size: 2rem;
+}
+
+nav li:last-child a {
+border-right: none;
+}
+
+h2 {
+font-size: 2.8rem;
+text-align: center;
+padding: 1rem;
+color: var(--main-color);
+}
+}
+
+/* //////////////////////////////////
+EXTRA LARGE SCREEN (900px and up)
+/////////////////////////////////// */
+
+@media (min-width: 900px) {
+/* Temple gallery: 3 columns */
+.temple_gallery {
+grid-template-columns: repeat(3, 1fr);
+}
+}
+
+footer {
+display: flex;
+margin: 0 auto;
+flex-direction: column;  
+max-width: 1200px;    
+align-items: center;        
+justify-content: center;     
+text-align: center;
+padding: 1rem;
+background-color: var(--main-color);   
+color: var(--accent2);                 
+font-size: 1rem;
+border-radius: 10px;
+}
