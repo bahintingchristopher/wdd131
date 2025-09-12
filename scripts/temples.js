@@ -1,9 +1,9 @@
 const menuButton = document.getElementById("menu");
 const nav = document.querySelector("nav");
 
-menuButton.addEventListener("click", () => {
-menuButton.classList.toggle("open"); // Toggle hamburger icon (☰/❌)
-nav.classList.toggle("open");        // Toggle visibility of nav
+menuButton.addEventListener("click", () => { //arrow function
+menuButton.classList.toggle("open");  //targetting the #menu.open::before 
+nav.classList.toggle("open");   //targetting the #menu.open::before    
 });
 
 // in getting the current year

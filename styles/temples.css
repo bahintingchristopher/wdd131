@@ -17,7 +17,6 @@ padding: 0;
 box-sizing: border-box;
 }
 
-
 /* ///////////////////////////
 SMALL SCREEN (default)
 //////////////////////// */
@@ -43,7 +42,6 @@ border: none;
 cursor: pointer;
 z-index: 10;
 }
-
 
 #menu::before {
 content: "☰";

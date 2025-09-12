@@ -5,10 +5,9 @@
   --headings-color: #2F4F4F;   
   --accent1: #2E3A70;         
   --accent2: #2E7D56;          
-  --font-body: 'Roboto', sans-serif; 
+ --font-body: 'Roboto', sans-serif; 
   --font-headings: 'Lato', sans-serif;
 }
-
 
 body {
   background-color: var(--body-color); 
@@ -21,8 +20,6 @@ h1, h2, header{
 footer {
     font-family: var(--font-body);
 }
-
-
 
 /* ///////////////////////////////
 LARGE SCREEN (740px and up)
