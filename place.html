@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" Content="Christopher T. Bahinting">
+    <meta name="Description" Content="Place - this is webpage about place with weather and brief Description about our place.">
+    
+    <link rel="stylesheet" href="styles/place_large.css" media="(min-width: 1000px)">
+    <link rel="stylesheet" href="styles/place_small.css" media="(max-width: 999px)">
+
+    <title>WDD131 - Country Page | Christopher T. Bahinting</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+   
+</head>
+<body>
+    <header>
+        <h1>Philippines</h1>
+    </header>
+
+   <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero_image_large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero_image_medium.webp" media="(min-width: 500px)">
+                <img src="images/hero_image_small.webp" alt="san_juanico_bridge" width="500" height="250">
+            </picture>
+      
+            <div class="data">
+                <h2>Area</h2>
+                <div class="info-group">
+                <div class="info-data">
+                    <span class="label">Land Area</span><span class="colon">:</span><span class="value">300,000 sq km</span>
+                </div>
+                <div class="info-data">
+                    <span class="label">Population</span><span class="colon">:</span><span class="value">112,729,484</span>
+                </div>
+                <div class="info-data">
+                    <span class="label">Capital</span><span class="colon">:</span><span class="value">Manila</span>
+                </div>
+                <div class="info-data">
+                    <span class="label">languages</span><span class="colon">:</span><span class="value">Tagalog</span>
+                </div>
+                <div class="info-data">
+                    <span class="label">Currency</span><span class="colon">:</span><span class="value">Philippines Peso</span>
+                </div>            
+                <div class="info-data">
+                    <span class="label">Time Zone</span><span class="colon">:</span><span class="value">UTC+8 (PhST)</span>
+                </div>
+                <div class="info-data">
+                    <span class="label">Calling Code</span><span class="colon">:</span><span class="value">+63</span>
+                </div>
+                <div class="info-data">
+                    <span class="label">Internal TLD</span><span class="colon">:</span><span class="value">.ph</span>
+                </div>
+            </div>
+            </div>
+            
+                <section class="weather-section">
+                    <h3 class="weather-title">Weather</h3>
+                    <div class="info-data">
+                        <span class="label">Temperature</span>
+                        <span class="colon">:</span>
+                        <span class="value">30 °C</span>
+                    </div>
+                    <div class="info-data">
+                        <span class="label">Conditions</span>
+                        <span class="colon">:</span>
+                        <span class="value">Partly Cloudy</span>
+                    </div>
+                    <div class="info-data">
+                        <span class="label">Wind</span>
+                        <span class="colon">:</span>
+                        <span class="value">10 km/h</span>
+                    </div>
+                    <div class="info-data">
+                        <span class="label">Wind Chill</span>
+                        <span class="colon">:</span>
+                        <span class="value">9.8 °C</span>
+                    </div>
+                </section>
+        </div>
+
+        
+    </main>
+
+    <script src="scripts/place.js" defer></script>
+        
+    <footer>
+            <p>
+                &copy; <span id="currentYear"></span> | Christopher T. Bahinting | Cebu, Philippines
+            </p>
+            <p id="lastModified"></p>
+    </footer>
+
+    
+</body>
+</html>

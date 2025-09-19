@@ -1,0 +1,257 @@
+:root {
+  --text-body : #143642;
+  --header-foote-back: #0F8B8D;
+  --background: #DAD2D8;
+  --back1: #EC9A29;
+  --back2: #A8201A;
+  --font-heading: 'Lato', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+  --font-paragraph: 'Open Sans', sans-serif;
+  --font-footer: 'Noto Sans', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+}
+
+p {
+  font-family: var(--font-paragraph);
+}
+
+footer {
+  font-family: var(--font-footer);
+}
+
+@media (max-width: 999px) {
+  .hero {
+    position: static;  
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-size: 1.4rem;
+    width: 90%;
+    border-radius: 1rem;
+    margin: 0 auto;
+    padding: 1rem 0;
+    color: var(--back1);
+    background-color: var(--text-body)
+    
+  }
+.hero {
+  width: 90%;               
+  
+  margin: 0 auto;          
+  display: block;
+  position: static;         
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: center;       
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;          
+  border-radius: 0;
+}
+
+  }   
+  .data, .weather-section {
+    position: static;
+    margin: 1rem auto;
+    width: 90%;
+    max-width: 400px;
+    background: var(--header-foote-back);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: none;
+  }
+
+  .data h2, .weather-section h3 {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    background: var(--text-body);
+    padding: 0.5rem;
+    border-radius: 6px;
+    color: var(--background);
+  }
+
+  
+  .info-group, .weather-section {
+    display: grid;
+    row-gap: 6px;
+    color: var(--background);
+  }
+
+  .info-data {
+    display: grid;
+    grid-template-columns: max-content 15px 1fr;
+    align-items: right;
+      color: var(--back1);
+  }
+
+   .label {
+  display: inline-block;  
+  width: 100px;  
+  min-width: 100px;     
+  text-align: right;
+   color: var(--background);;  
+  font-size: .7rem;           
+}
+  .colon {
+    text-align: right;
+    font-weight: bold;
+      color: var(--background);
+    font-size: .7rem;
+  }
+
+  .value {
+    text-align: left;
+    font-size: .7rem;
+      color: var(--background);
+  }
+
+ 
+
+footer {
+width: 80%;
+border-radius: 1rem;
+margin: 0 auto;
+  margin-top: -1rem;
+  color: var(--background);
+  text-align: center;
+  font-size: .4rem;
+  background: var(--text-body);
+  display: grid;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  grid-template-columns: 1fr;
+  
+}
+
+footer p { 
+display: flex;
+justify-content: center;  
+align-items: center;  
+}
+
+@media (min-width: 500px) and (max-width: 999px) {
+  .hero {
+    width: 90%;
+    margin: 0 auto;
+    position: static;
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0;
+  }
+
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    background: var(--text-body);
+    padding: 1rem 0;
+    margin:  0 auto;
+
+    color: var(--background);
+  }
+
+  .data, .weather-section {
+    position: static;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1rem;
+    background: var(--back1);
+    border-radius: 8px;
+    box-shadow: var(--back2);
+  }
+
+  .data {
+    margin-top: .4rem;
+  }
+
+  .weather-section {
+    margin-top: .4rem;
+  }
+
+  .data h2, .weather-section h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    background: var(--background);
+    color: var(--text-body);
+    padding: 0.5rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+  }
+
+  .info-group, .weather-section {
+    display: grid;
+    row-gap: 6px;
+  }
+
+  .info-data {
+    display: grid;
+    grid-template-columns: max-content 15px 1fr;
+    align-items: center;
+    color: var(--background);
+  }
+
+  .label {
+    display: inline-block;
+    margin-left: 4rem;
+    width: 140px;
+    min-width: 130px;
+    text-align: right;
+    font-size: 1rem;
+    color: var(--text-body);
+    padding: 0.3rem 0;
+  }
+
+  .colon {
+    width: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--text-body);
+  }
+
+  .value {
+    text-align: left;
+    font-size: 1rem;
+    color: var(--text-body);
+    padding: 0.3rem 0;
+  }
+
+  footer {
+    margin: 30px auto 0;
+    padding: 1rem;
+    text-align: center;
+    font-size: .2rem;
+    background: var(--text-body);
+    margin-top: -.3rem;
+  }
+
+  footer p {
+    font-size: .2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .9rem;
+  }
+}
