@@ -4,10 +4,10 @@
   --background: #DAD2D8;
   --back1: #EC9A29;
   --back2: #A8201A;
-  --font-heading: 'Lato', sans-serif;
-  --font-body: 'Roboto', sans-serif;
-  --font-paragraph: 'Open Sans', sans-serif;
-  --font-footer: 'Noto Sans', sans-serif;
+  --font-heading: 'Roboto';
+  --font-body: 'Lato';
+  --font-paragraph: 'Lato';
+  --font-footer: 'Lato';
 }
 
 body {
@@ -25,6 +25,7 @@ p {
 footer {
   font-family: var(--font-footer);
 }
+
 
 @media (max-width: 999px) {
   .hero {
@@ -94,7 +95,7 @@ footer {
   .info-data {
     display: grid;
     grid-template-columns: max-content 15px 1fr;
-    align-items: right;
+    align-items: center;
       color: var(--back1);
   }
 
@@ -118,7 +119,13 @@ footer {
     font-size: .7rem;
       color: var(--background);
   }
-
+.weather-title img {
+  width: 60px !important;
+  height: 60px !important;
+  margin-left: 8px !important;
+  vertical-align: middle !important;
+  display: inline-block !important;
+}
  
 
 footer {
@@ -179,8 +186,7 @@ align-items: center;
     padding: 1rem;
     background: var(--back1);
     border-radius: 8px;
-    box-shadow: var(--back2);
-  }
+     }
 
   .data {
     margin-top: .4rem;
