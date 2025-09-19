@@ -4,10 +4,10 @@
   --background: #DAD2D8;
   --back1: #EC9A29;
   --back2: #A8201A;
-  --font-heading: 'Roboto';
-  --font-body: 'Lato';
-  --font-paragraph: 'Lato';
-  --font-footer: 'Lato';
+  --font-heading: 'Roboto', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+  --font-paragraph: 'Open Sans', sans-serif;
+  --font-footer: 'Open Sans', sans-serif;
 }
 
 body {
