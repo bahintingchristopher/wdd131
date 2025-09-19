@@ -1,14 +1,16 @@
 :root {
-  --text-body : #143642;
-  --header-foote-back: #0F8B8D;
-  --background: #DAD2D8;
-  --back1: #EC9A29;
-  --back2: #A8201A;
+  --text-body: #143642;  
+  --header-foote-back: #0C6E70;  
+  --background: #F2F2F2;  
+  --back1: #D57B1F;  
+  --back2: #8C1C17;  
+  
   --font-heading: 'Roboto', sans-serif;
   --font-body: 'Open Sans', sans-serif;
   --font-paragraph: 'Open Sans', sans-serif;
   --font-footer: 'Open Sans', sans-serif;
 }
+
 
 body {
   font-family: var(--font-body);
@@ -105,18 +107,18 @@ footer {
   min-width: 100px;     
   text-align: right;
    color: var(--background);;  
-  font-size: .7rem;           
+  font-size: .9rem;           
 }
   .colon {
     text-align: right;
     font-weight: bold;
       color: var(--background);
-    font-size: .7rem;
+    font-size: .9rem;
   }
 
   .value {
     text-align: left;
-    font-size: .7rem;
+    font-size: .9rem;
       color: var(--background);
   }
 .weather-title img {
@@ -129,13 +131,13 @@ footer {
  
 
 footer {
-width: 80%;
+width: 100%;
 border-radius: 1rem;
 margin: 0 auto;
   margin-top: -1rem;
   color: var(--background);
   text-align: center;
-  font-size: .4rem;
+  font-size: .9rem;
   background: var(--text-body);
   display: grid;
   padding-bottom: 1rem;
@@ -246,15 +248,15 @@ align-items: center;
 
   footer {
     margin: 30px auto 0;
-    padding: 1rem;
+    padding: 1.1rem;
     text-align: center;
-    font-size: .2rem;
+    font-size: 1rem;
     background: var(--text-body);
     margin-top: -.3rem;
   }
 
   footer p {
-    font-size: .2rem;
+    font-size: 1.2rem;
     display: flex;
     justify-content: center;
     align-items: center;

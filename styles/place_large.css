@@ -1,14 +1,16 @@
 :root {
-  --text-body : #143642;
-  --header-foote-back: #0F8B8D;
-  --background: #DAD2D8;
-  --back1: #EC9A29;
-  --back2: #A8201A;
- --font-heading: 'Roboto', sans-serif;
+  --text-body: #143642;  
+  --header-foote-back: #0C6E70; 
+  --background: #F2F2F2;  
+  --back1: #D57B1F;  
+  --back2: #8C1C17; 
+  
+  --font-heading: 'Roboto', sans-serif;
   --font-body: 'Open Sans', sans-serif;
   --font-paragraph: 'Open Sans', sans-serif;
   --font-footer: 'Open Sans', sans-serif;
 }
+
 
 body {
   font-family: var(--font-body);
@@ -159,7 +161,7 @@ footer {
 .weather-title img {
   width: 60px;
   height: 60px;
-  margin-left: 1rem; /* optional */
+  margin-left: 1rem;  
 }
 
 
@@ -191,3 +193,4 @@ gap: 0.5rem;
 align-items: center;  
 margin: 0;  
 }
+
