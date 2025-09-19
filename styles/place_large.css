@@ -4,10 +4,10 @@
   --background: #DAD2D8;
   --back1: #EC9A29;
   --back2: #A8201A;
-  --font-heading: 'Roboto';
-  --font-body: 'Lato';
-  --font-paragraph: 'Lato';
-  --font-footer: 'Lato';
+ --font-heading: 'Roboto', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+  --font-paragraph: 'Open Sans', sans-serif;
+  --font-footer: 'Open Sans', sans-serif;
 }
 
 body {
@@ -149,13 +149,17 @@ footer {
   color: var(--background);
 }
 
+.weather-title {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
 
 .weather-title img {
-  width: 60px !important;
-  height: 60px !important;
-  margin-left: 8px !important;
-  vertical-align: middle !important;
-  display: inline-block !important;
+  width: 60px;
+  height: 60px;
+  margin-left: 1rem; /* optional */
 }
 
 
