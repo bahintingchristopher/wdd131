@@ -38,10 +38,10 @@ footer {
     font-size: 2.5rem;
     text-align: center;
     font-size: 1.4rem;
-    width: 90%;
+  
     border-radius: 1rem;
     margin: 0 auto;
-    padding: 1rem 0;
+   
     color: var(--back1);
     background-color: var(--text-body)
     
@@ -69,8 +69,8 @@ footer {
   .data, .weather-section {
     position: static;
     margin: 1rem auto;
-    width: 90%;
-    max-width: 400px;
+   
+
     background: var(--header-foote-back);
     padding: 1rem;
     border-radius: 8px;
@@ -103,8 +103,8 @@ footer {
 
    .label {
   display: inline-block;  
-  width: 100px;  
-  min-width: 100px;     
+
+ 
   text-align: right;
    color: var(--background);;  
   font-size: .9rem;           
@@ -131,7 +131,7 @@ footer {
  
 
 footer {
-width: 100%;
+
 border-radius: 1rem;
 margin: 0 auto;
   margin-top: -1rem;
@@ -154,7 +154,7 @@ align-items: center;
 
 @media (min-width: 500px) and (max-width: 999px) {
   .hero {
-    width: 90%;
+ 
     margin: 0 auto;
     position: static;
     padding: 1rem;
@@ -163,7 +163,7 @@ align-items: center;
   }
 
   .hero img {
-    width: 100%;
+ 
     height: auto;
     display: block;
     margin: 0 auto;
@@ -182,8 +182,8 @@ align-items: center;
 
   .data, .weather-section {
     position: static;
-    width: 90%;
-    max-width: 500px;
+
+ 
     margin: 0 auto;
     padding: 1rem;
     background: var(--back1);
