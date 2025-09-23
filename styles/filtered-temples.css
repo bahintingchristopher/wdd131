@@ -6,10 +6,28 @@
 --headings-color: #598185;
 --accent1: #404E7C;
 --accent2: #71B48D;  
---font-body: 'Roboto', sans-serif;
---font-headings: 'Lato', sans-serif;
+--font-heading: 'Roboto', sans-serif;
+--font-body: 'Open Sans', sans-serif;
+--font-paragraph: 'Open Sans', sans-serif;
+--font-footer: 'Open Sans', sans-serif;
 }
 
+
+body {
+  font-family: var(--font-body);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+}
+
+p {
+  font-family: var(--font-paragraph);
+}
+
+footer {
+  font-family: var(--font-footer);
+}
 
 * {
 margin: 0;

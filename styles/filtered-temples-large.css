@@ -5,9 +5,29 @@
   --headings-color: #2F4F4F;   
   --accent1: #2E3A70;         
   --accent2: #2E7D56;          
- --font-body: 'Roboto', sans-serif; 
-  --font-headings: 'Lato', sans-serif;
+  --font-heading: 'Roboto', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+  --font-paragraph: 'Open Sans', sans-serif;
+  --font-footer: 'Open Sans', sans-serif;
 }
+
+
+body {
+  font-family: var(--font-body);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+}
+
+p {
+  font-family: var(--font-paragraph);
+}
+
+footer {
+  font-family: var(--font-footer);
+}
+
 
 body {
   background-color: var(--body-color); 
