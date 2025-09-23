@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
             let filteredList;
             switch (filter) {
                 case "old": 
-                filteredList = temples.filter(temple => parseInt(temple.dedicated.split(' ')[0]) < 1900);
+                filteredList = temples.filter(temple => parseInt(temple.dedicated.substring(0, 4)) < 1900); //
 
                 break;
                 case "new":

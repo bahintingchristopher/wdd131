@@ -124,19 +124,3 @@ font-size: 1rem;
 border-radius: 10px;
 }
 
-/*THIS IS JUST MY ADDITION FOR THE IMAGES TO BE FULLSCREEN WHEN CLICKED*/
-/* Fullscreen image styling */
-.fullscreen-image { /* This attribute will be activated once the image is clicked, and the code was made in the js */
-  position: fixed !important;
-  top: 0 !important;
-  left: 0 !important;
-  width: 100vw !important;
-  height: 100vh !important;
-  object-fit: cover !important;  /* COVER THE FULL SCREEN*/
-  z-index: 10000 !important;
-  cursor: zoom-out !important;
-
-  border: none !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
-}
