@@ -55,10 +55,23 @@ h2 {
 header p
 {
  font-size: 1.5rem;
- text-align: justify;
  margin-left: 4rem;
  margin-right: 4rem;
  color: var(--primary_color);
+}
+
+.purpose 
+{
+    text-align: center;
+}
+
+.purpose p
+{
+    font-size: 1.5rem;
+    color: var(--accent2);
+    text-align: justify;
+    margin-left: 4rem;
+    margin-right: 4rem;
 }
 
 .scenarios
