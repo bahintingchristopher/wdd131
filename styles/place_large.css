@@ -159,6 +159,7 @@ footer {
 
 
 .weather-title img {
+  display: none;
   width: 60px;
   height: 60px;
   margin-left: 1rem;  

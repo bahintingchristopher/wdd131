@@ -38,8 +38,20 @@ function getWindChillDisplay(temp, speed, unit) {
   }
 
   // Set the last modified date in the footer
+  // const lastModifiedP = document.getElementById("lastModified");
+  // if (lastModifiedP) {
+  //   lastModifiedP.textContent = `Last Modification: ${document.lastModified}`;
+  // }
+
   const lastModifiedP = document.getElementById("lastModified");
-  if (lastModifiedP) {
-    lastModifiedP.textContent = `Last Modification: ${document.lastModified}`;
-  }
+if (lastModifiedP) {
+  const lastModifiedDate = new Date(document.lastModified);
+  const formattedDate = lastModifiedDate.toLocaleString('en-US', {
+    dateStyle: 'long',
+    timeStyle: 'short'
+  });
+  lastModifiedP.textContent = `Last Modified: ${formattedDate}`;
+}
+
 });
+

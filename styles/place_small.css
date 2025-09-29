@@ -43,7 +43,7 @@ footer {
     margin: 0 auto;
    
     color: var(--back1);
-    background-color: var(--text-body)
+    background-color: none;
     
   }
 .hero {
@@ -132,12 +132,10 @@ footer {
 
 footer {
 
-border-radius: 1rem;
-margin: 0 auto;
+  margin: 0 auto;
   margin-top: -1rem;
   color: var(--background);
   text-align: center;
-  font-size: .9rem;
   background: var(--text-body);
   display: grid;
   padding-bottom: 1rem;
@@ -149,7 +147,8 @@ margin: 0 auto;
 footer p { 
 display: flex;
 justify-content: center;  
-align-items: center;  
+align-items: center;
+font-size: .8rem;  
 }
 
 @media (min-width: 500px) and (max-width: 999px) {
@@ -173,11 +172,11 @@ align-items: center;
   h1 {
     font-size: 3rem;
     text-align: center;
-    background: var(--text-body);
+    background: none;
     padding: 1rem 0;
     margin:  0 auto;
 
-    color: var(--background);
+    color: var(--text-body);
   }
 
   .data, .weather-section {
@@ -248,18 +247,17 @@ align-items: center;
 
   footer {
     margin: 30px auto 0;
-    padding: 1.1rem;
+  
     text-align: center;
-    font-size: 1rem;
     background: var(--text-body);
     margin-top: -.3rem;
   }
 
   footer p {
-    font-size: 1.2rem;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: .9rem;
+    
   }
 }
