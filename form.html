@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Christopher T. Bahinting">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Christopher T. Bahinting, in this course we are going to study about HTML, CSS and JavaScript.">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form_small.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,500&family=Roboto:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <header>
+            <h1>Product Review</h1>
+    </header>
+
+    <main>
+        
+<form method="get" action="review.html" class="wf1">
+
+<fieldset class="product-select">
+    <label for="product-select">Product Name</label>
+    <select id="product-select" name="subject" required>
+    <option value=""  disabled selected ></option>
+    </select>
+</fieldset>
+
+  <fieldset class="rating-group">
+  <legend>Overall Rating</legend>
+  <div class="stars">
+    <label>
+      <span>☆</span>
+      <input type="radio" name="rating" value="1" required>
+    </label>
+    <label>
+      <span>☆☆</span>
+      <input type="radio" name="rating" value="2" required>
+    </label>
+    <label>
+      <span>☆☆☆</span>
+      <input type="radio" name="rating" value="3" required>
+    </label>
+    <label>
+      <span>☆☆☆☆</span>
+      <input type="radio" name="rating" value="4" required>
+    </label>
+    <label>
+      <span>☆☆☆☆☆</span>
+      <input type="radio" name="rating" value="5" required>
+    </label>
+  </div>
+</fieldset>
+
+<fieldset class="installation-date">
+    <label for="installation-date">Installation Date</label>
+    <input type="date" id="installation-date" name="installation-date" required>
+</fieldset>
+
+<fieldset class="features">
+    <legend>Which Features did you find useful in the product?</legend>
+    <p>(Check all that apply)</p>
+    <label>
+        <input type="checkbox" name="features-used" value="feature1">
+        Durability
+    </label>
+    <label>
+        <input type="checkbox" name="features-used" value="feature2">
+        Ease of Use
+    </label>
+    <label>
+        <input type="checkbox" name="features-used" value="feature3">
+        Performance
+    </label>
+    <label>
+        <input type="checkbox" name="features-used" value="feature4">
+        Design
+    </label>
+</fieldset>
+
+<fieldset class="written-review">
+    <label for="written-review">Write your review (Optional)</label>
+    <textarea id="written-review" name="written-review" rows="4" cols="50" placeholder="Write your review here..." ></textarea>
+</fieldset>
+
+<fieldset class="user-name">
+    <label for="user-name">Your Name (Optional)</label>
+    <input type="text" id="user-name" name="user-name" placeholder="Your name...">
+</fieldset>
+
+<fieldset class="post-review">
+    <button type="submit">Post Review</button>
+
+</fieldset>
+        
+
+    
+    </form>
+    </main>
+
+    <script src="scripts/form.js" defer></script>
+    <footer>
+        <p>
+        &copy; <span id="currentYear"></span> | Christopher T. Bahinting | Philippines
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
