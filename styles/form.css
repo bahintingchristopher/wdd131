@@ -1,0 +1,276 @@
+/* General */
+:root {
+--main-color: #000807;      
+--body-color: #FBF9FF;       
+--headings-color: #A2A3BB;   
+--accent1: #9395D3;    
+--accent2: #B3B7EE;     
+       
+--font-heading: 'Roboto', sans-serif;
+--font-body: 'Open Sans', sans-serif;
+--font-paragraph: 'Open Sans', sans-serif;
+--font-footer: 'Open Sans', sans-serif;
+}
+
+
+body {
+  font-family: var(--font-body);
+   
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+}
+
+p {
+  font-family: var(--font-paragraph);
+}
+
+footer {
+  font-family: var(--font-footer);
+}
+
+
+
+
+h1 {
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--main-color);
+    max-width: 550px;
+    width: 100%;
+    color: var(--body-color);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: .5rem;
+}
+
+h2 {
+    padding-top: 2rem ;
+    text-align: center;
+    color: var(--main-color);
+    background-color: var(--accent1);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.thank-you p {
+    text-align: center;
+    color: var(--main-color);
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    padding-bottom: 2rem;
+}   
+
+main {
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--accent1);
+  
+}
+
+form {
+    background-color: var(--headings-color);
+      box-sizing: border-box;
+}
+
+
+/*product select label settings*/
+.product-select label {
+    display: block;
+    padding-top: 2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.wf1 fieldset {
+    width: 100%;
+    display: block;
+    border: none;
+}
+
+#product-select {
+width: 520px;    
+height: 44px;    
+font-size: 16px;  
+margin: 0 auto;
+}
+
+/*overall rating settings*/
+.rating-group .stars {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-left: -2rem;
+}
+
+
+.rating-group legend {
+padding-top: 3rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  width: 100%;
+ 
+}
+
+.rating-group label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.rating-group input[type="radio"] {
+    width: 20px;
+  height: 20px;
+}
+
+/*installation date settings*/
+.installation-date {
+    display: block;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.installation-date label {
+    display: block;
+   font-weight: bold;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+input[type="date"] {
+    width: 516px;    
+    height: 44px;    
+    font-size: 16px;     
+}
+
+
+/*features settings*/
+.wf1 input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.wf1 .features label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.features legend {
+    padding-top: 1.2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 100%;   
+}
+
+.features p {
+    font-size: 1.2rem;
+    text-align: left;
+    margin-top: -.3rem;
+    margin-bottom: -.5rem;
+    font-style: oblique;
+}
+
+.features label {
+    display: block;
+     font-weight: bold;
+    font-size: 1.2rem;
+    text-align: left;
+    margin-top: .5rem;
+}
+
+/*written review settings*/
+.written-review {
+    display: block;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.written-review label {
+    display: block;
+   font-weight: bold;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+textarea {
+    width: 516px;    
+    height: 150px;    
+    font-size: 16px;     
+    padding: .5rem;
+    box-sizing: border-box;
+    resize: none;
+    font-style: oblique;
+}
+
+
+/*user name settings*/
+.user-name {
+    display: block;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}   
+
+.user-name label {
+    display: block;
+   font-weight: bold;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+input[type="text"] {
+    width: 516px;    
+    height: 44px;    
+    font-size: 16px;     
+    padding: .5rem;
+    box-sizing: border-box;
+    font-style: oblique;
+}
+
+/*submit button settings*/
+button {
+    display: block;
+    width: 520px;
+    height: 50px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: var(--main-color);
+    color: var(--accent2);
+    border: none;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: var(--main-color);
+    color: var(--body-color);
+}
+
+footer {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--body-color);
+    margin-bottom: 1rem;
+    background-color: var(--main-color);
+    width: 100%;
+    max-width: 550px;
+    margin-top: .5rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+
+}
