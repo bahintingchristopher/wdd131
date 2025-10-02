@@ -9,12 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const select = document.getElementById('product-select');
   if (select) {
-    const placeholderOption = document.createElement('option');
-    placeholderOption.value = "";
-    placeholderOption.textContent = "Select a Product ...";
-    placeholderOption.disabled = true;
-    placeholderOption.selected = true;
-    select.appendChild(placeholderOption);
+    
 
     products.forEach(product => {
       const option = document.createElement('option');
