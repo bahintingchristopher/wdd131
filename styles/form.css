@@ -45,11 +45,12 @@ h1 {
     margin-bottom: .5rem;
 }
 
+/*thank you message settings*/
 h2 {
     padding-top: 2rem ;
     text-align: center;
     color: var(--main-color);
-    background-color: var(--accent1);
+    background-color: var(--body-color);
     font-size: 1.5rem;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
@@ -69,7 +70,7 @@ main {
     max-width: 550px;
     width: 100%;
     margin: 0 auto;
-    background-color: var(--accent1);
+    background-color: var(--body-color);
   
 }
 
