@@ -58,7 +58,7 @@ display: none;
 margin: 0;              
 padding: 50px 40px;
 border-radius: 0;        
-background-color: var(--highlight-color);
+background-color: var(--accent);
 display: flex;
 justify-content: space-evenly;
 flex-wrap: wrap;
@@ -67,7 +67,7 @@ box-sizing: border-box;
 
 .navbar a {
 font-size: 2rem;
-color: var(--secondary-color);
+color: var(--background);
 border-radius: 10px;
 text-decoration: none;
 transition: background-color 0.3s ease;
@@ -80,7 +80,7 @@ transition: background-color 0.3s ease;
 
 
 .navbar a:hover {
-color: var(--accent);  
+color: var(--secondary-color);  
 }
 
 /*home page*/
@@ -280,7 +280,7 @@ width: 100%;
 height: auto;     
 border-radius: 8px;  
 object-fit: cover;  
-border: .2rem solid ;
+border: .2rem solid var(--accent) ;
 }
 
 /* ABOUT PAGE */
