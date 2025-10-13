@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
   
 
   document.addEventListener("click", (event) => {
-  const isClickInsideHamburger = hamburger.contains(event.target);
-  const isClickInsideNavbar = navbar.contains(event.target);
+  const isClickInsideHamburger = hamburger && hamburger.contains(event.target);
+  const isClickInsideNavbar = navbar && navbar.contains(event.target);
 
   if (!isClickInsideHamburger && !isClickInsideNavbar) {
     navbar.classList.remove("active");
