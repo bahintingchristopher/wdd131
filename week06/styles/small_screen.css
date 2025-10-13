@@ -34,8 +34,6 @@ font-style: var(--font-secondary);
 }
 
 
-
-
 @media screen and (max-width: 600px)  {
 /* BODY */
 body {
@@ -51,10 +49,10 @@ padding: 15px 10px;
 }
 
 .logo-img {
-max-width: 15%;
+max-width: 100px;
 height: auto;
 display: block;
-margin: 0 auto;
+margin-left: 10px;
 }
 
 .logo h1 {
@@ -119,7 +117,6 @@ padding-top: 60px;
 display: flex;
 flex-direction: column;
 border-top: 1px solid var(--primary);
-
 }
 
 }
@@ -144,6 +141,9 @@ font-weight: bold;
 font-weight: bold;
 }
 
+.navbar {
+    display: none;
+}
 
 .navbar a {
 display: block;
@@ -152,6 +152,8 @@ padding: 10px 0;
 font-size: 3rem;
 color: var(--accents);
 text-decoration: none;
+margin-right: 0 !important;
+margin-left: 0 !important;
 
 }
 
@@ -159,16 +161,19 @@ text-decoration: none;
 /* Hamburger menu button */
 .hamburger {
 margin-top: -1rem;
-margin-left: -1rem;
+margin-right: .5rem;
 display: block;
 cursor: pointer;
-font-size: 2rem;
+font-size: 4rem;
 background: none;
 border: none;
 color: var(--primary);
 padding: 10px 20px;
 }
 
+.about-intro h1{
+padding-top: .8rem !important;
+}
 
 /* GENERAL SECTIONS (welcome, hero, mission, cta, services) */
 .welcome,
@@ -326,8 +331,8 @@ margin-bottom: 10px !important;
 }
 
 .heading-portfolio h1 {
-    font-size: 2rem !important;
-    margin-top: -2rem;
+font-size: 2rem !important;
+margin-top: -2rem;
 }
 
 .heading-portfolio p,

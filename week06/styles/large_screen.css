@@ -15,7 +15,7 @@ margin: 0;
 padding: 0;
 }
 
- 
+
 h1, h2, h3 {
 font-size: 5rem;
 font-family: var(--font-secondary);
@@ -27,62 +27,87 @@ font-style: var(--font-secondary);
 }
 
 p {
-  align-items: center;
-}
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* Logo left, nav & hamburger right */
-  padding: 1rem 2rem;
-  background-color: var(--background);
+align-items: center;
 }
 
- 
+.header {
+display: flex;
+align-items: center;
+justify-content: space-between; /* Logo left, nav & hamburger right */
+padding-top: 1rem !important;
+background-color: var(--accent);
+padding-bottom: 1rem !important;
+margin-bottom: 1rem ;
+}
+
+
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
- 
+display: flex;
+align-items: center;
+gap: 0.75rem;
+
 }
 
 .logo-img {
-  height: 50px; 
-  width: auto;
-  border-radius: 50%;
+max-width: 100px;
+height: auto;
+border-radius: 50%;
+margin-left: 5rem;
+
 }
 
- 
+
 .hamburger {
-  display: none;
-  font-size: 2rem;
-  background: none;
-  border: none;
-  cursor: pointer;
+display: none;
+font-size: 2rem;
+background: none;
+border: none;
+cursor: pointer;
 }
 
 /* Nav links */
 .navbar {
-  display: flex;
-  gap: 1.5rem;
+display: flex;
+gap: 1rem;
 }
 
 .navbar a {
-  text-decoration: none;
-  color: var(--primary-color);
-  font-weight: 500;
-  padding: 0.5rem 0;
+text-decoration: none;
+color: var(--background);
+font-weight: bold;
+padding: 0.5rem 0;
+margin-right: 5rem;
+margin-left: -3rem;
+text-align: center;
 }
 
- 
-.navbar a.active {
-  font-weight: 700;
+
+.contact-link {
+background-color:var(--highlight-color);
+border: 2px solid var(--primary-color);
+border-radius: 4px;
+box-shadow: 0 4px 6px var(--primary-color);
 }
+
+nav a.contact-link {
+color: var(--background);
+padding-right: 1rem;
+padding-left: 1rem;
+font-size: 1.2rem;
+font-weight:bold;
+}
+
+
+.navbar a.active {
+font-weight: 700;
+}
+
 
 .navbar a:hover {
 color: var(--secondary-color);  
 }
 
- 
+
 .welcome_hero {
 display: grid;
 padding-top: 2rem;
@@ -227,10 +252,10 @@ align-items: center;
 
 
 .social-icons img {
-  width: 36px;
+width: 36px;
 }
 
-  /* Default desktop */
+/* Default desktop */
 h1 {
 font-size: 2.5rem;
 }
@@ -260,7 +285,7 @@ margin: 1rem auto 0;
 width: max-content;     
 text-align: center; 
 font-size: 1.2rem;    
-  margin-top: -1.5rem;
+margin-top: -1.5rem;
 }
 
 .project {
@@ -288,6 +313,10 @@ text-align: center;
 font-size: 1.5rem;  
 }
 
+.about-intro h1{
+padding-top: 0 !important;
+}
+
 .about-intro p {
 text-align: center;       
 width: 1060px;          
@@ -301,10 +330,10 @@ text-align: center;
 
 
 .values-section {
-  padding-top: 20px;
+padding-top: 20px;
 text-align: justify;
 text-align: center;
-  font-size: 1.5rem;  
+font-size: 1.5rem;  
 }
 
 .values-section ul {
@@ -380,22 +409,22 @@ text-align: center;
 
 .get-in-touch h1 {
 
-  font-size: 2.5rem;
-  text-align: center;
+font-size: 2.5rem;
+text-align: center;
 }
 
 
 .contact-info {
 padding-top: 20px;
-  font-size: 1.5rem;
-  text-align: center;
-    }
+font-size: 1.5rem;
+text-align: center;
+}
 
 .contact-info p {
 text-align: center;
 
 }
-  
+
 fieldset{
 border: none;
 display: block;
@@ -458,6 +487,9 @@ width: 550px;
 height: 44px;
 }
 
+.contact-page {
+padding-top: .6rem;
+}
 
 
 .contact-form button {
@@ -486,7 +518,7 @@ grid-template-columns: repeat(2, 1fr);
 }
 
 .offers {
-  max-width: 100%;
+max-width: 100%;
 margin: 20px; 
 padding: 15px;
 border-radius: 8px;

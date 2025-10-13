@@ -8,6 +8,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
   
+const contact = document.getElementById("contact-link");
+const toggleButton = document.getElementById("toggle-style"); // this is the button that triggers
+
+if (contact && toggleButton) {
+  toggleButton.addEventListener("click", () => {
+    contact.classList.toggle("contact-link");
+  });
+}
+
+
 
   document.addEventListener("click", (event) => {
   const isClickInsideHamburger = hamburger && hamburger.contains(event.target);
