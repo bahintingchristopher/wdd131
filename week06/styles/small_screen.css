@@ -450,7 +450,7 @@ width: 80% !important;
 height: auto !important;
 margin: 15px auto 20px !important;
 display: block !important;
-border-radius: 8px !important;
+border-radius: 50% !important;
 object-fit: contain !important;
 }
 
