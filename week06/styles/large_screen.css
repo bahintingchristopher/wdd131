@@ -707,15 +707,15 @@ text-decoration: none;
 
 /*PRIVACY*/
 .privacy-container {
-  background-color: rgb(202, 235, 247);
-  width: 100%;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  padding: 2rem;
-  font-family: var(--font-secondary);
-  color: var(--primary-color);
-  line-height: 1.7;
-  box-sizing: border-box;
+background-color: rgb(202, 235, 247);
+width: 100%;
+margin-left: 0;
+margin-right: 0;
+padding: 2rem;
+font-family: var(--font-secondary);
+color: var(--primary-color);
+line-height: 1.7;
+box-sizing: border-box;
 }
 
 
