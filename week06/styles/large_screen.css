@@ -8,7 +8,7 @@
 --font-secondary: 'Lato', 'Roboto', sans-serif;
 }
 
-html, body {
+html, body, input, button, label {
 height: 100%;
 font-family: var(--font-secondary);
 margin: 0;
@@ -701,7 +701,7 @@ font-size: 0.5rem;
 
 .footer-bottom a {
 color: var(--secondary-color);
-text-decoration: underline;
+text-decoration: none;
 }
 
 
@@ -761,7 +761,7 @@ list-style-type: disc;
 
 .privacy-container a {
 color: var(--highlight-color);
-text-decoration: underline;
+text-decoration: none;
 }
 
 .privacy-container a:hover {
