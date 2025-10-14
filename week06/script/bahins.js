@@ -1,6 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
   const hamburger = document.querySelector(".hamburger");
   const navbar = document.querySelector(".navbar");
+  const closeBtn = document.querySelector(".close-btn");
+
+if (closeBtn && navbar) {
+  closeBtn.addEventListener("click", () => {
+    navbar.classList.remove("active");
+  });
+}
+
 
   if (hamburger && navbar) {
     hamburger.addEventListener("click", () => {

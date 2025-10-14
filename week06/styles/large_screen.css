@@ -102,6 +102,7 @@ font-weight:bold;
 
 .navbar a.active {
 font-weight: 700;
+color: var(--secondary-color);
 }
 
 
@@ -572,7 +573,7 @@ font-size: 2rem;
 background-color: var(--secondary-color);
 }
 
-/*FOOTER-------------------------------------------------------------*/
+/*FOOTER*/
 
 .footer {
 background-color: var(--primary-color);
@@ -772,3 +773,16 @@ text-decoration: none;
 .privacy-container a:hover {
 color: var(--accent);
 }
+
+
+/*CLOSE BUTTON*/
+.close-btn
+{
+    display: none;
+}
+
+/*NAV MENU ADDITIONAL*/
+  .contact-info-mobile,
+  .social-links-mobile {
+    display: none;
+  }
