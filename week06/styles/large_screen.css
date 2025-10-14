@@ -707,14 +707,18 @@ text-decoration: none;
 
 /*PRIVACY*/
 .privacy-container {
-background-color: rgb(202, 235, 247);
-width: 100%;
-padding: 2rem 5vw;
-font-family: var(--font-secondary);
-color: var(--primary-color);
-line-height: 1.7;
-box-sizing: border-box;
+  background-color: rgb(202, 235, 247);
+  width: 100%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 2rem;
+  font-family: var(--font-secondary);
+  color: var(--primary-color);
+  line-height: 1.7;
+  box-sizing: border-box;
 }
+
+
 
 .privacy-container h1 {
 font-size: 2.5rem;
