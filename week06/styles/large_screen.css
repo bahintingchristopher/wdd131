@@ -725,7 +725,7 @@ text-decoration: none;
 /*PRIVACY*/
 .privacy-container {
 background-color: rgb(202, 235, 247);
-max-width: 800px;
+max-width: 1200px;
 margin: 0 auto;
 padding: 2rem;
 font-family: var(--font-secondary);
