@@ -676,15 +676,15 @@ box-sizing: border-box;
 }
 
 .bebet {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
+position: absolute;
+width: 1px;
+height: 1px;
+padding: 0;
+margin: -1px;
+overflow: hidden;
+clip: rect(0, 0, 0, 0);
+white-space: nowrap;
+border: 0;
 }
 
 
@@ -725,9 +725,8 @@ text-decoration: none;
 /*PRIVACY*/
 .privacy-container {
 background-color: rgb(202, 235, 247);
-width: 100%;
-margin-left: 0;
-margin-right: 0;
+max-width: 800px;
+margin: 0 auto;
 padding: 2rem;
 font-family: var(--font-secondary);
 color: var(--primary-color);
@@ -793,12 +792,12 @@ color: var(--accent);
 /*CLOSE BUTTON*/
 .close-btn
 {
-    display: none;
+display: none;
 }
 
 /*NAV MENU ADDITIONAL*/
-  .contact-info-mobile,
-  .social-links-mobile {
-    display: none;
-  }
+.contact-info-mobile,
+.social-links-mobile {
+display: none;
+}
 

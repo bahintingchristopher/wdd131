@@ -599,6 +599,12 @@ box-sizing: border-box;
 max-width: 600px;
 }
 
+.privacy-container a {
+word-break: break-word;
+overflow-wrap: anywhere;
+}
+
+
 .privacy-container h1 {
 font-size: 1.8rem;
 }
