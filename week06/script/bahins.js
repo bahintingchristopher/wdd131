@@ -9,6 +9,14 @@ if (closeBtn && navbar) {
   });
 }
 
+ const faqItems = document.querySelectorAll('.faq-item h2');
+faqItems.forEach(item => {
+  item.addEventListener('click', () => {
+    const parent = item.parentElement;  
+    parent.classList.toggle('active');
+  });
+});
+
 
   if (hamburger && navbar) {
     hamburger.addEventListener("click", () => {
