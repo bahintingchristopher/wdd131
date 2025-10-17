@@ -1,0 +1,44 @@
+@media (max-width: 600px) {
+
+#app h1 {
+max-width: 700px;       /* limits width */
+margin: 0 auto;      /* centers horizontally with vertical spacing */
+padding: 0;
+border-radius: 10px;
+font-size: 1.5rem;
+}
+
+.player-buttons {
+display: grid;
+grid-template-columns: 1fr 1fr; /* two equal columns */
+gap: 10px;                      /* space between buttons */
+width: 100%;
+max-width: 300px;               /* optional limit for mobile */
+margin-left: -10px;
+}
+
+.player-buttons button {
+font-size: 40px;
+padding: 10px 0;
+width: 100%;                    /* fill grid column */
+border: none;
+background-color: #4CAF50;
+color: white;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+text-align: center;
+margin-bottom: 1rem;
+}
+
+.player-buttons button:hover {
+background-color: #45a049;
+}
+
+/* Footer credit */
+.bahins p {
+color: blue;
+font-size: 1.5rem;
+margin-top: -1.4rem;
+}
+}
