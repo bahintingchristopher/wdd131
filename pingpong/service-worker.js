@@ -1,13 +1,14 @@
 const CACHE_NAME = 'pingpong-cache-v1';
+
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/score.css',
-  '/mobile.css',
-  '/score.js',
-  '/manifest.json',
-  '/icons/icon-192.png',
-  '/icons/icon-512.png',
+  '/wdd131/pingpong/',
+  '/wdd131/pingpong/index.html',
+  '/wdd131/pingpong/score.v1.css',
+  '/wdd131/pingpong/mobile.v1.css',
+  '/wdd131/pingpong/score.v1.js',
+  '/wdd131/pingpong/manifest.json',
+  '/wdd131/pingpong/icons/icon-192.png',
+  '/wdd131/pingpong/icons/icon-512.png',
 ];
 
 self.addEventListener('install', (event) => {
