@@ -13,7 +13,18 @@ const urlsToCache = [
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll(urlsToCache))
+    caches.open(CACHE_NAME).then((cache) => {
+      return Promise.all(
+        urlsToCache.map(url =>
+          fetch(url).then(response => {
+            if (!response.ok) {
+              throw new Error(`Failed to fetch ${url}: ${response.statusText}`);
+            }
+            return cache.put(url, response);
+          })
+        )
+      );
+    })
   );
 });
 
