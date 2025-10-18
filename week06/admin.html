@@ -1,7 +1,7 @@
 <ul id="allMessages"></ul>
 
 <script>
-  fetch('http://localhost:3000/messages')
+  fetch('https://bahins-backend.onrender.com/messages')
     .then(res => res.json())
     .then(messages => {
       const list = document.getElementById('allMessages');
@@ -10,5 +10,8 @@
         li.textContent = `${msg.name} (${msg.email}) - ${msg.reason}: ${msg.message}`;
         list.appendChild(li);
       });
+    })
+    .catch(error => {
+      console.error('Failed to fetch messages:', error);
     });
 </script>
