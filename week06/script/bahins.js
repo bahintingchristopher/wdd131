@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (proj) {
       proj.setAttribute('loading', 'lazy');
       proj.setAttribute('src', projImages[index]);
-      proj.style.cursor = 'pointer';  // Indicate clickable
+      proj.style.cursor = 'pointer';
       proj.addEventListener('click', () => {
         if (projLinks[index]) {
           window.open(projLinks[index], '_blank');
@@ -90,9 +90,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Function to update message count display
+  // ✅ UPDATED: Message Count API - use Render backend
   function updateMessageCount() {
-    fetch('http://localhost:3000/message-count')
+    fetch('https://bahins-backend.onrender.com/message-count')
       .then(response => response.json())
       .then(data => {
         const countEl = document.getElementById('messageCount');
@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Call once on page load
   updateMessageCount();
 
-  // Form submission handler
+  // ✅ UPDATED: Contact form submission to use live backend
   if (contactForm) {
     contactForm.addEventListener('submit', function(event) {
       event.preventDefault();
@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
         message: this.message.value,
       };
 
-      fetch('http://localhost:3000/submit-message', {
+      fetch('https://bahins-backend.onrender.com/submit-message', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
@@ -128,8 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
         alert(data.message || 'Message sent successfully!');
         updateMessageCount();  // update the count after success
         this.reset();          // clear the form
-        window.open('response.html');
-
+        window.open('response.html', '_self');  // replace current page
       })
       .catch(err => {
         alert('Failed to send message.');
